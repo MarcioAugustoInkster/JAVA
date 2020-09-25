@@ -6,16 +6,21 @@
     <title>Exercício 3a</title>
 
     <script>
-        var nota1 = prompt("Nota 1:\n");
-        var nota2 = prompt("Nota 2:\n");
-        var media = parseFloat((parseFloat(nota1) + parseFloat(nota2)) / 2);
+        // Dados de entrada pelo usuário já convertidos
+        var nota1 = parseFloat(prompt("Nota 1:\n"));
+        var nota2 = parseFloat(prompt("Nota 2:\n"));
+        // Define um cálculo de média
+        var media = parseFloat((nota1 + nota2) / 2);
         
+        // Verifica condição
         if (media >= 7) {
+            // Exibe mensagem
             document.write("[Aprovado]");
         } else {
             document.write("[Reprovado]");
         }
 
+        // Imprime a mensagem na página
         document.write("<br/>Média: " + media.toFixed(2));
     </script>
 </head>

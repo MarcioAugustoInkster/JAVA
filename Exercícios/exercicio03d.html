@@ -6,7 +6,25 @@
     <title>Exercício 3d</title>
 
     <script>
-        
+        // Informa 3 números ao usuário
+        var numero1 = parseInt(prompt("Informe um número 1"));
+        var numero2 = parseInt(prompt("Informe um número 2"));
+        var numero3 = parseInt(prompt("Informe um número 3"));
+
+        // Define o primeiro número como ponto de partida
+        var menor = numero1;
+
+        // Verifica se o segundo número é o menor
+        if (numero2 < menor) {
+            menor = numero2;
+        }
+        // Verifica se o terceiro número é o menor
+        if (numero3 < menor) {
+            menor = numero3;
+        }
+
+        // Imprime na tela o resultado
+        document.write("O número " + menor + " é o menor");
     </script>
 </head>
 <body>
