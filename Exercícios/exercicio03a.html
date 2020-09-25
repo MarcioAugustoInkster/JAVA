@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3a</title>
+
+    <script>
+        var nota1 = prompt("Nota 1:\n");
+        var nota2 = prompt("Nota 2:\n");
+        var media = parseFloat((parseFloat(nota1) + parseFloat(nota2)) / 2);
+        
+        if (media >= 7) {
+            document.write("[Aprovado]");
+        } else {
+            document.write("[Reprovado]");
+        }
+
+        document.write("<br/>Média: " + media.toFixed(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
